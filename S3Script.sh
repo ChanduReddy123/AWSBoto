@@ -1,4 +1,6 @@
 #!/bin/bash
+#This script will give the size of each and every bucket in your account 
+
 aws s3 ls | awk '{print $3}' > BucketList
 
 while IFS= read -r BucketName;do
