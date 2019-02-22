@@ -17,7 +17,7 @@ def lambda_handler(event, context):
     s3.Bucket(bucket).download_file(key, destination)
     #using the attachments 
     ATTACHMENT = destination
-    SENDER = "Feedback@blockit.co"
+    SENDER = "mailid@domain"
     AWS_REGION = "us-east-1"
     SUBJECT = "New support Email."
     BODY_HTML = """\
